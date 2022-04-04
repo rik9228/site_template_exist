@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@": ["src/assets"]
+    },
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "target": "es2020"
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*.ts"]
+}

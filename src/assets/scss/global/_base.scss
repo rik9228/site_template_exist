@@ -1,0 +1,18 @@
+body,
+html {
+  background: teal;
+  font-size: 62.5%;
+}
+
+.l-container {
+  grid-template-columns: repeat(3, 1fr);
+  background-image: linear-gradient(to bottom, #8bcc8e 0%, #a7f5ab 100%);
+  display: flex;
+  background: url("../img/100x100.png");
+}
+
+::placeholder {
+  opacity: 1;
+  font-size: 14px;
+  display: flex;
+}
