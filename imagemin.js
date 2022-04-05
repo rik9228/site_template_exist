@@ -8,12 +8,12 @@ const imageminSvgo = require("imagemin-svgo");
 imagemin(["./src/assets/img/**/*"], {
   plugins: [imageminMozjpeg({ quality: 80 }), imageminPngquant(), imageminGifsicle(), imageminSvgo()],
   replaceOutputDir: (output) => {
-    return output.replace(/img\//, "../../dist/assets/img/");
+    return output.replace(/img\//, "../../public/assets/img/");
   },
 })
   .then(() => {
-    // dist配下の画像ファイルをwebp変換
-    imagemin(["./dist/assets/img/**/*"], {
+    // public配下の画像ファイルをwebp変換
+    imagemin(["./public/assets/img/**/*"], {
       use: [imageminWebp()],
     });
   })

@@ -11,7 +11,7 @@ module.exports = {
     main: path.resolve(__dirname, "./src/assets/ts/main.ts"),
   },
   output: {
-    path: path.resolve(__dirname, "dist/assets"),
+    path: path.resolve(__dirname, "public/assets"),
     filename: "js/[name].js",
   },
   module: {
@@ -46,8 +46,8 @@ module.exports = {
       host: "localhost",
       port: 3000,
       // proxy: "http://exmaple.local", // Local で使うと時にここをSite Domain に変更する
-      server: { baseDir: "dist" },
-      files: ["./dist"],
+      server: { baseDir: "public" },
+      files: ["./public"],
     }),
   ],
   resolve: {

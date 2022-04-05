@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "copy": "node copy.mjs",
-    "clean": "del-cli dist/",
+    "clean": "del-cli public/",
     "img": "node imagemin.js",
     "img:w": "onchange src/assets/img/ -- node imagemin.js {{changed}}",
     "fix": "eslint --fix ./src/assets/ts/* && prettier --write './src' '!src/img'",
